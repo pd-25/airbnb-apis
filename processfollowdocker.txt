@@ -1,0 +1,16 @@
+create and write dockerfile
+docker build -t airbnb-fastapi .
+//docker build --no-cache -t airbnb-backend .
+
+
+docker run -d -p 8000:8000 airbnb-fastapi
+//docker run -rm -it -p 8000:8000 airbnb-fastapi
+
+docker stop id
+
+docker compose up --build
+docker rmi $(docker images -q) -f //remove all images
+
+1. docker setup
+2. env file setup
+3. Database Connection setup

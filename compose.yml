@@ -1,0 +1,11 @@
+version: '3.9'  # Specify the version of Docker Compose
+
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"  # Map host port 8000 to container port 8000
+    volumes:
+      - ./backend:/app  # Mount the backend folder for live updates (optional)
+    environment:
+      - ENV=development  # Example of an environment variable, useful in production vs dev
