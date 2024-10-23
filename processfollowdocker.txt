@@ -1,6 +1,7 @@
-create and write dockerfile
+1. create and write dockerfile
 docker build -t airbnb-fastapi .
 //docker build --no-cache -t airbnb-backend .
+2. create compose file then "docker compose up --build"
 
 
 docker run -d -p 8000:8000 airbnb-fastapi
@@ -11,6 +12,6 @@ docker stop id
 docker compose up --build
 docker rmi $(docker images -q) -f //remove all images
 
-1. docker setup
-2. env file setup
-3. Database Connection setup
+Set up the database commection with alembic
+3. alembic init alembicFolder
+4. 

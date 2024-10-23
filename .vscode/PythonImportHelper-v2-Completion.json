@@ -1,0 +1,331 @@
+[
+    {
+        "label": "fileConfig",
+        "importPath": "logging.config",
+        "description": "logging.config",
+        "isExtraImport": true,
+        "detail": "logging.config",
+        "documentation": {}
+    },
+    {
+        "label": "engine_from_config",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "pool",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "context",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "database.config",
+        "description": "database.config",
+        "isExtraImport": true,
+        "detail": "database.config",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "database.config",
+        "description": "database.config",
+        "isExtraImport": true,
+        "detail": "database.config",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "database.config",
+        "description": "database.config",
+        "isExtraImport": true,
+        "detail": "database.config",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "database.base",
+        "description": "database.base",
+        "isExtraImport": true,
+        "detail": "database.base",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "database.base_class",
+        "description": "database.base_class",
+        "isExtraImport": true,
+        "detail": "database.base_class",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "database.base_class",
+        "description": "database.base_class",
+        "isExtraImport": true,
+        "detail": "database.base_class",
+        "documentation": {}
+    },
+    {
+        "label": "Test",
+        "importPath": "database.models.test",
+        "description": "database.models.test",
+        "isExtraImport": true,
+        "detail": "database.models.test",
+        "documentation": {}
+    },
+    {
+        "label": "as_declarative",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "declared_attr",
+        "importPath": "sqlalchemy.ext.declarative",
+        "description": "sqlalchemy.ext.declarative",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.declarative",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "run_migrations_offline",
+        "kind": 2,
+        "importPath": "backend.alembic.env",
+        "description": "backend.alembic.env",
+        "peekOfCode": "def run_migrations_offline() -> None:\n    \"\"\"Run migrations in 'offline' mode.\n    This configures the context with just a URL\n    and not an Engine, though an Engine is acceptable\n    here as well.  By skipping the Engine creation\n    we don't even need a DBAPI to be available.\n    Calls to context.execute() here emit the given string to the\n    script output.\n    \"\"\"\n    url = config.get_main_option(\"sqlalchemy.url\")",
+        "detail": "backend.alembic.env",
+        "documentation": {}
+    },
+    {
+        "label": "run_migrations_online",
+        "kind": 2,
+        "importPath": "backend.alembic.env",
+        "description": "backend.alembic.env",
+        "peekOfCode": "def run_migrations_online() -> None:\n    \"\"\"Run migrations in 'online' mode.\n    In this scenario we need to create an Engine\n    and associate a connection with the context.\n    \"\"\"\n    connectable = engine_from_config(\n        config.get_section(config.config_ini_section, {}),\n        prefix=\"sqlalchemy.\",\n        poolclass=pool.NullPool,\n    )",
+        "detail": "backend.alembic.env",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "kind": 5,
+        "importPath": "backend.alembic.env",
+        "description": "backend.alembic.env",
+        "peekOfCode": "config = context.config\n#added\nconfig.set_main_option(\"sqlalchemy.url\", settings.DATABASE_URL)\n# Interpret the config file for Python logging.\n# This line sets up loggers basically.\nif config.config_file_name is not None:\n    fileConfig(config.config_file_name)\n# add your model's MetaData object here\n# for 'autogenerate' support\n# from myapp import mymodel",
+        "detail": "backend.alembic.env",
+        "documentation": {}
+    },
+    {
+        "label": "target_metadata",
+        "kind": 5,
+        "importPath": "backend.alembic.env",
+        "description": "backend.alembic.env",
+        "peekOfCode": "target_metadata = Base.metadata\n# other values from the config, defined by the needs of env.py,\n# can be acquired:\n# my_important_option = config.get_main_option(\"my_important_option\")\n# ... etc.\ndef run_migrations_offline() -> None:\n    \"\"\"Run migrations in 'offline' mode.\n    This configures the context with just a URL\n    and not an Engine, though an Engine is acceptable\n    here as well.  By skipping the Engine creation",
+        "detail": "backend.alembic.env",
+        "documentation": {}
+    },
+    {
+        "label": "Test",
+        "kind": 6,
+        "importPath": "backend.database.models.test",
+        "description": "backend.database.models.test",
+        "peekOfCode": "class Test(Base):\n    id = Column(Integer, primary_key=True, autoincrement=True)\n    first_name = Column(String, nullable=False)",
+        "detail": "backend.database.models.test",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 6,
+        "importPath": "backend.database.base_class",
+        "description": "backend.database.base_class",
+        "peekOfCode": "class Base:\n    id: Any\n    __name__: str\n    @declared_attr\n    def __tablename__(cls) -> str:\n        return cls.__name__.lower()",
+        "detail": "backend.database.base_class",
+        "documentation": {}
+    },
+    {
+        "label": "Setting",
+        "kind": 6,
+        "importPath": "backend.database.config",
+        "description": "backend.database.config",
+        "peekOfCode": "class Setting:\n    PROJECT_TITLE: str = \"Airbnb backend apis\"\n    PROJECT_VERSION: str = \"0.1.0\"\n    # db stuff    \n    POSTGRES_USER: str = os.getenv(\"POSTGRES_USER\")\n    POSTGRES_PASSWORD: str = os.getenv(\"POSTGRES_PASSWORD\")\n    POSTGRES_SERVER: str = os.getenv(\"POSTGRES_SERVER\")\n    POSTGRES_PORT: str = os.getenv(\"POSTGRES_PORT\")\n    POSTGRES_DB: str = os.getenv(\"POSTGRES_DB\")\n    DATABASE_URL: str = f\"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_SERVER}:{POSTGRES_PORT}/{POSTGRES_DB}\"",
+        "detail": "backend.database.config",
+        "documentation": {}
+    },
+    {
+        "label": "env_path",
+        "kind": 5,
+        "importPath": "backend.database.config",
+        "description": "backend.database.config",
+        "peekOfCode": "env_path = Path(\".\") / \".env\"\n# print(env_path)\nload_dotenv(dotenv_path=env_path)\nclass Setting:\n    PROJECT_TITLE: str = \"Airbnb backend apis\"\n    PROJECT_VERSION: str = \"0.1.0\"\n    # db stuff    \n    POSTGRES_USER: str = os.getenv(\"POSTGRES_USER\")\n    POSTGRES_PASSWORD: str = os.getenv(\"POSTGRES_PASSWORD\")\n    POSTGRES_SERVER: str = os.getenv(\"POSTGRES_SERVER\")",
+        "detail": "backend.database.config",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "kind": 5,
+        "importPath": "backend.database.config",
+        "description": "backend.database.config",
+        "peekOfCode": "settings = Setting()",
+        "detail": "backend.database.config",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "kind": 2,
+        "importPath": "backend.database.session",
+        "description": "backend.database.session",
+        "peekOfCode": "def get_db():\n    try:\n        db = SESSIONLOCAL()\n        yield db\n    finally:\n        db.close()",
+        "detail": "backend.database.session",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "backend.database.session",
+        "description": "backend.database.session",
+        "peekOfCode": "engine = create_engine(settings.DATABASE_URL)\nSESSIONLOCAL = sessionmaker(autoflush=False, autocommit=False, bind=engine)\ndef get_db():\n    try:\n        db = SESSIONLOCAL()\n        yield db\n    finally:\n        db.close()",
+        "detail": "backend.database.session",
+        "documentation": {}
+    },
+    {
+        "label": "SESSIONLOCAL",
+        "kind": 5,
+        "importPath": "backend.database.session",
+        "description": "backend.database.session",
+        "peekOfCode": "SESSIONLOCAL = sessionmaker(autoflush=False, autocommit=False, bind=engine)\ndef get_db():\n    try:\n        db = SESSIONLOCAL()\n        yield db\n    finally:\n        db.close()",
+        "detail": "backend.database.session",
+        "documentation": {}
+    },
+    {
+        "label": "start_application",
+        "kind": 2,
+        "importPath": "backend.main",
+        "description": "backend.main",
+        "peekOfCode": "def start_application():\n    app = FastAPI(title=settings.PROJECT_TITLE, version=settings.PROJECT_VERSION)\n    # include_router(app)\n    # create_tables()\n    return app\napp = start_application()\n@app.get(\"/\")\ndef firstFunc():\n    return \"pradipta testing\"",
+        "detail": "backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "firstFunc",
+        "kind": 2,
+        "importPath": "backend.main",
+        "description": "backend.main",
+        "peekOfCode": "def firstFunc():\n    return \"pradipta testing\"",
+        "detail": "backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "backend.main",
+        "description": "backend.main",
+        "peekOfCode": "app = FastAPI()\ndef start_application():\n    app = FastAPI(title=settings.PROJECT_TITLE, version=settings.PROJECT_VERSION)\n    # include_router(app)\n    # create_tables()\n    return app\napp = start_application()\n@app.get(\"/\")\ndef firstFunc():\n    return \"pradipta testing\"",
+        "detail": "backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "backend.main",
+        "description": "backend.main",
+        "peekOfCode": "app = start_application()\n@app.get(\"/\")\ndef firstFunc():\n    return \"pradipta testing\"",
+        "detail": "backend.main",
+        "documentation": {}
+    }
+]
